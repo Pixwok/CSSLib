@@ -52,3 +52,64 @@
     cursor: pointer;
     transform: scale(1.1);
 }
+
+/*----FORM----*/
+/*TEXT-FORM*/
+.txt-form {
+    background-color:rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0 15px 0;
+    transition: 0.3s;
+    outline: none;
+}
+.txt-form:focus {
+    box-shadow: 0px 2px 5px 1px rgba(0, 123, 255, 0.6);
+}
+.txt-form:focus::placeholder {
+    opacity: 0;
+}
+/*DATE-FORM*/
+.date-form {
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6em;
+    margin: 10px 0 15px 0;
+}
+/*FORM FILE*/
+.file-label {
+    position: relative;
+    cursor: pointer;
+    margin: 10px 0 15px 0;
+    
+}
+.file-form {
+    position: absolute;
+    opacity: 0;
+    outline: 0;
+}
+.file-cnt {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #444444;
+    font-size: 16px;
+    padding: 0.5em 1em 0.5em 1em; 
+    border-radius: 3px;
+}
+.file-icon {
+    margin-right: 5px;
+}
+/*TIME FORM*/
+.time-form {
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 6px;
+}
