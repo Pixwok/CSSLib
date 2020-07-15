@@ -239,3 +239,55 @@ input[type='checkbox'] {
     font-size: 1.2rem;
 }
 /*RESPONSIVE NAV*/
+#open-nav {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+}
+.open-nav-label {
+    font-size: 3em;
+    color: black; /*COLOR OPEN NAV*/
+}
+#open-nav:checked ~ .nav-pane {
+    left: -5vw;
+    transform: translateX(5vw);
+}
+.nav-pane {
+    background-color: #333333;
+    position: absolute;
+    width: 90%;
+    height: max-content;
+    transform: translateX(-115%);
+    transition: all 0.6s, ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    overflow: hidden;
+    /*FLEX NAV*/
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.nav-pane>ul>li {
+    position: relative;
+    padding: 30px 0;
+}
+.nav-pane>ul>li::before {
+    background-color: #007bff;
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    left: 0px;
+    bottom: 10px;
+    transition: all .5s ease;
+}
+.nav-pane>ul>li:hover::before {
+    width: 100%;
+}
+.nav-pane>ul>li>a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 3em;
+    text-transform: uppercase;
+}
