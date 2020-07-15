@@ -113,3 +113,127 @@
     border-radius: 3px;
     padding: 6px;
 }
+/*CHECKBOX*/
+input[type='checkbox'] {
+    cursor: pointer;
+}
+/*CLASSIC*/
+.classic-check {
+    position: relative;
+    outline: 0;
+    border-radius: 4px;
+    width: 1.5em;
+    height: 1.5em;
+    border: solid 1px #bdc1c6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: 0.3s ease-out;
+}
+.classic-check::before {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 5px;
+    top: 1px;
+    height: 14px;
+    width: 8px;
+    border-style: solid;
+    border-color: #fff;
+    transform: rotate(45deg);
+    border-width: 0 2px 2px 0;
+    box-sizing: border-box;
+    opacity: 0;
+}
+.classic-check:checked {
+    background-color: #06842c;
+    color: #fff;
+    border-color: #06842c;
+}
+.classic-check:checked::before{
+    opacity: 1;
+}
+.classic-check:active {
+    transform: scale(0.6);
+}
+.label-classic {
+    position: relative;
+    font-size: 1.2rem;
+    top: -5px;
+}
+/*SWITCH*/
+.switch {
+    outline: none;
+    width: 38px;
+    border-radius: 11px;
+    outline: none;
+    border: 1px solid #bdc1c6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 21px;
+    transition: 0.2s;
+}
+.switch::after {
+    position: relative;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #007bff; /*COLOR POINT*/
+    content: '';
+    display: block;
+    left: 2px;
+    top: 2px;
+    transition: 0.3s;
+}
+.switch:checked {
+    background-color: #007bff; /*COLOR-BACKGROUD CHECKED*/
+    box-shadow: 0px 1px 4px 1px rgba(0, 123, 255, 0.5);
+}
+.switch:checked::after {
+    background-color: #FFF;
+    transform: translateX(17px);
+    -webkit-transform: translateX(17px);
+}
+/*CIRCLE CHECKBOX*/
+.circle-check {
+    position: relative;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #bdc1c6;
+    border-radius: 50%;
+    height: 21px;
+    width: 21px;
+    transition: 0.3s ease-out;
+}
+.circle-check::before {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 6px;
+    top: 3px;
+    height: 12px;
+    width: 6px;
+    border-style: solid;
+    border-color: #fff;
+    transform: rotate(45deg);
+    border-width: 0 2px 2px 0;
+    box-sizing: border-box;
+    opacity: 0;
+}
+.circle-check:checked {
+    background-color: #007bff;
+    color: #fff;
+}
+.circle-check:checked::before {
+    opacity: 1;
+}
+.circle-check:active {
+    transform: scale(0.6);
+}
+.label-circle {
+    position: relative;
+    top: -6px;
+}
