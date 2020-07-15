@@ -6,4 +6,3 @@ This CSS library implements the following functions :
 - Form
 - CheckBox
 - Responsive Nav
-- Slider
