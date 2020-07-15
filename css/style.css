@@ -236,4 +236,5 @@ input[type='checkbox'] {
 .label-circle {
     position: relative;
     top: -6px;
+    font-size: 1.2rem;
 }
